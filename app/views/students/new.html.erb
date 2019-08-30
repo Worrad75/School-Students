@@ -1,0 +1,13 @@
+<h1>New Student Form</h1>
+
+<%= form_for @student do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :age %>
+  <%= f.collection_select :school_id, @schools, :id, :name %>
+  <%= f.submit "Submit Student" %>
+<% end %>
+
+
+
+  <%#              :what were setting, the collection we grab from, :what school_id will evaluate to, what you want the user to see %>
+  <%#                                                             --> the method that you want to call on an element from the collection%>

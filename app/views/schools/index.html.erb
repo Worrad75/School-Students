@@ -1,10 +1,5 @@
 <h1>Schools</h1>
 
-<ul>
-  <%@schools.each do |school|%>
-    <li>
-      <%=school.name%>
-    </li>
-  <%end%>
-
-</ul>
+<%@schools.each do |school|%>
+   <div><%= link_to school.name, school_path(school) %></div>
+<%end%>

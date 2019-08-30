@@ -1,0 +1,8 @@
+<h1>Student Page for <%= @student.name %></h1>
+
+<h2> Age: <%= @student.age %></h2>
+
+<h2> School: <%= @school.to_s %></h2>
+
+
+<%= link_to  "Edit Page", "/students/#{@student.id}/edit" %>

@@ -1,0 +1,8 @@
+<h1>EDIT PAGE</h1>
+
+<%= form_for @student do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_field :age %>
+    <%= f.collection_select :school_id, @schools, :id, :name %>
+    <%= f.submit "Apply Edits" %>
+<% end %>
